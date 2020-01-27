@@ -21,7 +21,7 @@ Vehicle.getAllPublication = function (result) {
   };
 
 Vehicle.findById = (publicationId, result) => {
-    sql.query("SELECT * FROM vehicles ", function (err, result, fields) {
+    sql.query(`SELECT * FROM vehicles WHERE veh_id = ?`, publicationId, (err, res) => {
     if (err) {
       console.log("error: ", err);
       result(err, null);
@@ -34,6 +34,7 @@ Vehicle.findById = (publicationId, result) => {
       return;
     }
 
+    console.log(Query, err);
     // not found Publication with the id
     result({ kind: "not_found" }, null);
   });

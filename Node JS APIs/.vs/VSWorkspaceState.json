@@ -2,10 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\app",
+    "\\app\\config",
     "\\app\\controller",
     "\\app\\model",
     "\\app\\routes"
   ],
-  "SelectedNode": "\\app\\controller\\vehicle.controller.js",
+  "SelectedNode": "\\app\\model\\vehicle.model.js",
   "PreviewInSolutionExplorer": false
 }
